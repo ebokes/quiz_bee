@@ -9,9 +9,9 @@ const QuestionBox = ({ question, options }) => {
         <button
           key={index}
           className="answerBtn"
-          //   onClick={() => {
-          //     setAnswer([text]);
-          //   }}
+          onClick={() => {
+            setAnswer([text]);
+          }}
         >
           {text}
         </button>
