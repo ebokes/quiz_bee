@@ -121,5 +121,10 @@ body {
 }
 
 .playBtn:hover {
-  background-color: rgba(46, 182, 46, 0.897);
+  transform: translateY(-2px);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.493);
+}
+.playBtn:active {
+  box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.493);
+  transform: translateY(-1px);
 }
