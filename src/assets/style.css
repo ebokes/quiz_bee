@@ -6,7 +6,6 @@
 }
 
 body {
-  /* background-color: rgb(206, 204, 204); */
   background-image: linear-gradient(
       45deg,
       rgba(255, 255, 255, 0.7),
@@ -19,7 +18,6 @@ body {
 
 .container {
   background-color: rgb(240, 236, 236);
-  position: absolute;
   width: 90vw;
   max-width: 1024px;
   height: fit-content;
@@ -28,10 +26,6 @@ body {
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
   margin: auto;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.384);
 }
@@ -90,29 +84,31 @@ body {
 }
 
 .score-board {
-  position: relative;
   height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .score {
-  position: absolute;
-  width: 1024px;
   font-size: 3em;
-  top: 250px;
   text-align: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .score {
+    font-size: 32px;
+  }
 }
 
 .playBtn {
-  position: absolute;
   font-size: 1.4em;
   padding: 10px;
-  top: 350px;
   background-color: rgb(46, 182, 46);
   color: rgb(255, 255, 255);
   width: 150px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
